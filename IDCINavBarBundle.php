@@ -7,7 +7,7 @@
  *
  */
 
-namespace IDCI\Bundle\IDCINavBarBundle;
+namespace IDCI\Bundle\NavBarBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

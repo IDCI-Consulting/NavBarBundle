@@ -1,0 +1,24 @@
+{
+    "name": "idci/nav-bar-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony NavBarBundle",
+    "keywords": ["navbar", "navigation", "bar", "javascript", "html", "css"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Bondaz",
+            "email": "gabriel.bondaz@idci-consulting.fr",
+            "homepage": "http://www.idci-consulting.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": ">=2.1",
+        "twig/twig": "*"
+    },
+    "autoload": {
+        "psr-0": { "IDCI\\Bundle\\NavBarBundle": "" }
+    },
+    "target-dir": "IDCI/Bundle/NavBarBundle",
+    "minimum-stability": "dev"
+}

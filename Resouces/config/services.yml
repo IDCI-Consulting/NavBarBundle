@@ -1,0 +1,16 @@
+services:
+     idci_nav_bar.generator.css:
+        class: IDCI\Bundle\NavBarBundle\Generator\CssMenuGenerator
+        arguments: [%idci_nav_bar.menu%, @templating]
+
+     idci_nav_bar.generator.html:
+        class: IDCI\Bundle\NavBarBundle\Generator\HtmlMenuGenerator
+        arguments: [%idci_nav_bar.menu%, @templating]
+
+     idci_nav_bar.generator.js:
+        class: IDCI\Bundle\NavBarBundle\Generator\JsMenuGenerator
+        arguments: [%idci_nav_bar.menu%, @templating]
+
+     idci_nav_bar.generator.json:
+        class: IDCI\Bundle\NavBarBundle\Generator\JsonMenuGenerator
+        arguments: [%idci_nav_bar.menu%]

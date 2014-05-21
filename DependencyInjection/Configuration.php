@@ -34,6 +34,7 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->scalarNode('brand_title')->isRequired()->end()
+                ->scalarNode('brand_description')->defaultNull()->end()
                 ->scalarNode('brand_url')->isRequired()->end()
                 ->arrayNode('items')
                     ->isRequired()

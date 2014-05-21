@@ -22,11 +22,15 @@ window.onload = function() {
     var brand       = document.createElement('div');
     brand.className = 'brand active';
 
+    var brand_description = document.createElement('p');
+    brand_description.appendChild(document.createTextNode('{{ menu.brand_description }}'));
+
     var brand_a     = document.createElement('a');
     brand_a.href    = '{{ menu.brand_url|e }}';
     brand_a.alt     = '{{ menu.brand_title }}';
     brand_a.title   = '{{ menu.brand_title }}';
     brand_a.appendChild(document.createTextNode('{{ menu.brand_title }}'));
+    brand_a.appendChild(brand_description);
 
     brand.appendChild(brand_a);
     container.appendChild(brand);
